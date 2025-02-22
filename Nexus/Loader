@@ -1,1 +1,14 @@
-if 
+local Nexus = {
+    [134257874794717] = function()
+        loadstring(game:HttpGet("https://exploitfin.netlify.app/Nexus/Capybara%20Evolution"))()
+    end,
+}
+
+local placeid = game.PlaceId
+local script = Nexus[placeid]
+
+if script then
+    script()
+else
+    loadstring(game:HttpGet("https://exploitfin.netlify.app/Nexus/Not%20Supported"))()
+end
