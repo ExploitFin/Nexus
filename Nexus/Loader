@@ -2,6 +2,9 @@ local Nexus = {
     [134257874794717] = function()
         loadstring(game:HttpGet("https://exploitfin.netlify.app/Nexus/Capybara%20Evolution"))()
     end,
+    [73010525850196] = function()
+        loadstring(game:HttpGet("https://exploitfin.netlify.app/Nexus/Capybara%20Evolution"))()
+    end,
 }
 
 local placeid = game.PlaceId
