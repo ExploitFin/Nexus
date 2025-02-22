@@ -3,7 +3,7 @@ local Nexus = {
         loadstring(game:HttpGet("https://exploitfin.netlify.app/Nexus/Capybara%20Evolution"))()
     end,
     [73010525850196] = function()
-        loadstring(game:HttpGet("https://exploitfin.netlify.app/Nexus/Capybara%20Evolution"))()
+        loadstring(game:HttpGet("https://exploitfin.netlify.app/Nexus/Desert%20Detectors"))()
     end,
 }
 
