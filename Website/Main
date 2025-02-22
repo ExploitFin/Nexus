@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GitHub Repository Website</title>
+  <link rel="icon" href="Website/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="Website/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This page displays the favicon from the GitHub repository path.</p>
+</body>
+</html>
