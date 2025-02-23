@@ -5,6 +5,9 @@ local Nexus = {
     [73010525850196] = function()
         loadstring(game:HttpGet("https://exploitfin.netlify.app/Nexus/Desert%20Detectors"))()
     end,
+    [12795269794] = function()
+        loadstring(game:HttpGet("https://exploitfin.netlify.app/Nexus/Bakery%20Empire"))()
+    end,
 }
 
 local placeid = game.PlaceId
