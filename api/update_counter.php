@@ -1,5 +1,5 @@
 <?php
-$secretToken = "YourSecretToken";
+$secretToken = "ExploitFin";
 $data = json_decode(file_get_contents("php://input"), true);
 
 if(isset($data['token'], $data['action']) && $data['token'] === $secretToken && $data['action'] === "increment") {
