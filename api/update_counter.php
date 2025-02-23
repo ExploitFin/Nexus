@@ -1,22 +1,18 @@
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 3000;
+<?php
+$secretToken = "YourSecretToken";
+$data = json_decode(file_get_contents("php://input"), true);
 
-// For parsing application/json
-app.use(express.json());
-
-let runCount = 0;
-
-app.post('/api/updateCount', (req, res) => {
-  // Optionally, validate the request (e.g., check an API key)
-  runCount++; // Increment your counter
-  res.json({ message: "Count updated", runCount: runCount });
-});
-
-app.get('/api/getCount', (req, res) => {
-  res.json({ runCount: runCount });
-});
-
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+if(isset($data['token'], $data['action']) && $data['token'] === $secretToken && $data['action'] === "increment") {
+    $counterFile = "counter.txt";
+    if (!file_exists($counterFile)) {
+        file_put_contents($counterFile, "0");
+    }
+    $count = (int)file_get_contents($counterFile);
+    $count++;
+    file_put_contents($counterFile, $count);
+    echo json_encode(["count" => $count]);
+} else {
+    http_response_code(403);
+    echo json_encode(["error" => "Unauthorized request"]);
+}
+?>
